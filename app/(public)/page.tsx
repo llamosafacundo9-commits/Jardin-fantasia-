@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { db } from '@/lib/db'
 import { HeroSection } from '@/components/public/HeroSection'
 import { InfoBar } from '@/components/public/InfoBar'

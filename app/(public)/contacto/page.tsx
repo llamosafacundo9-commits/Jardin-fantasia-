@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { ContactForm } from '@/components/public/ContactForm'
 import { Phone, MapPin, Clock } from 'lucide-react'
 import type { Metadata } from 'next'

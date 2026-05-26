@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic'
 import { db } from '@/lib/db'
 import { GalleryClient } from '@/components/public/GalleryClient'
 import type { Metadata } from 'next'
