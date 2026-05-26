@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(kill 9159)",
+      "Bash(DATABASE_URL=\"file:./dev.db\" npm run dev -- -p 3010)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s http://localhost:3010)"
+    ]
+  }
+}

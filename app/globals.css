@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 20% 96%;
+    --foreground: 240 40% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 40% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 40% 15%;
+    --primary: 238 52% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 10% 92%;
+    --secondary-foreground: 240 40% 15%;
+    --muted: 240 10% 92%;
+    --muted-foreground: 240 10% 45%;
+    --accent: 240 10% 92%;
+    --accent-foreground: 240 40% 15%;
+    --destructive: 0 84% 44%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 10% 86%;
+    --input: 240 10% 86%;
+    --ring: 238 52% 36%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body {
+    @apply bg-cream text-foreground font-nunito;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { @apply font-fredoka; }
+}
+
+@layer utilities {
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+  .opacity-0-init { opacity: 0; }
+}
+
+/* Lightbox overrides */
+.yarl__container { background: rgba(0,0,0,0.92) !important; }
+
+/* TipTap editor */
+.tiptap { outline: none; min-height: 200px; }
+.tiptap p { margin-bottom: 0.75rem; }
+.tiptap strong { font-weight: 700; }
+.tiptap h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+.tiptap ul { list-style: disc; padding-left: 1.5rem; margin-bottom: 0.75rem; }
+.tiptap ol { list-style: decimal; padding-left: 1.5rem; margin-bottom: 0.75rem; }
